@@ -1,19 +1,16 @@
-name: "cwrs.github.io"
-title: "CWRS Data Hub"
+name: "reillypickard.github.io"
+title: "Reilly Pickard"
 theme: mytheme.css
 description: |
-  CWRS Data Hub
+  Reilly Pickard
 output_dir: "docs"
 favicon: water.png
 navbar:
   right:
   search: true
-  logo:
-    image: water-studies.png
-    href: https://reillypickard.github.io/CwrsDataHub.io/
   left:
     - text: "Home"
-      href: index2.html
+      href: index.html
     - text: "Wastewater Dashboards"
       menu:
         - text: "Covid-19 Wastewater Research"
