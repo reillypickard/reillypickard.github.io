@@ -13,7 +13,7 @@ navbar:
     href: https://reillypickard.github.io/CwrsDataHub.io/
   left:
     - text: "Home"
-      href: index2.html
+      href: index.html
     - text: "Wastewater Dashboards"
       menu:
         - text: "Covid-19 Wastewater Research"
