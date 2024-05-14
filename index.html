@@ -78,13 +78,13 @@
 </head>
 
 <body>
-    <div id="menu">
+<div id="menu">
     <h3>Menu</h3>
     <ul>
         <li><a href="index.html">Resume</a></li>
         <li>
-            <a href="#">Undergraduate</a>
-            <ul>
+            <a href="#" class="submenu-toggle">Undergraduate</a>
+            <ul class="submenu">
                 <li><a href="duckiebot.html">DuckieBot</a></li>
                 <li><a href="temperature_control.html">Temperature Control</a></li>
             </ul>
@@ -93,6 +93,18 @@
         <li><a href="#industry">Industry</a></li>
     </ul>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var submenuToggle = document.querySelector(".submenu-toggle");
+        var submenu = document.querySelector(".submenu");
+
+        submenuToggle.addEventListener("click", function (event) {
+            event.preventDefault();
+            submenu.classList.toggle("show");
+        });
+    });
+</script>
 
 
 
