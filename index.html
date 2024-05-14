@@ -11,60 +11,58 @@
             margin: 0;
             padding: 0;
             background-color: #fff;
-            display: flex;
         }
-
-        #menu {
-            width: 200px;
+        
+        header {
             background-color: #000;
-            color: #fff;
+        }
+        
+        #menu {
+            display: flex;
+            justify-content: space-between;
             padding: 20px;
         }
-
-        #content {
-            flex-grow: 1;
-            padding: 20px;
+        
+        #menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
         }
-
-        h1 {
-            color: #000;
+        
+        #menu ul li {
+            display: inline-block;
+            position: relative;
         }
-
-        h2 {
-            color: #000;
-        }
-
-        h3 {
-            color: #fff;
-        }
-
-        p {
-            color: #B59410;
-            font-size: 20;
-            line-height: 1.6;
-            text-align: left; /* Aligned text left */
-        }
-
-        p2 {
-            color: #000;
-            line-height: 1.6;
-            text-align: left; /* Aligned text left */
-        }
-
-        li {
-            color: #5a5a58;
-        }
-
-        a {
+        
+        #menu ul li a {
             color: #fff;
             text-decoration: none;
-            text-align: left; /* Aligned text left */
+            padding: 10px 20px;
+            display: block;
+        }
+        
+        #menu ul li:hover > ul.dropdown {
+            display: block;
+        }
+        
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #000;
+            min-width: 120px;
+            z-index: 1;
+        }
+        
+        .dropdown li {
+            display: block;
+        }
+        
+        .dropdown li a {
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
         }
 
-        a:hover {
-            color: #B59410;
-            
-        }
     </style>
 </head>
 
